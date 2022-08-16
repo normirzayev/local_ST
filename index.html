@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="add" > mahsulot qo'shish </button>
+    <table border="1">
+      <thead>
+        <tr>
+          <th> № </th>
+          <th> name </th>
+          <th> about </th>
+          <th> price </th>
+          <th> delete </th>
+          <th> edit </th>
+        </tr>
+        <tbody id="malumot_body" ></tbody>
+      </thead>
+    </table> 
+    <div class="modal">
+      <form action="#">
+        <h1 id="malumot_name" > mahsulot qo'shish </h1>
+        <input type="text" placeholder="nom" name="nom" />
+        <input type="text" placeholder="about" name="about" />
+        <input type="number" placeholder="price" name="price" />
+        <button type="submit" class="jonat"></button>
+      </form>
+    </div>
+  </div>    
+</body>
+<script src="main.js"></script>
+</html>

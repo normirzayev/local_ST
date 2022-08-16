@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --flex: 4;
+  --bg:white;
+  --color:black;
+}
+body{
+  background-color: silver;
+}
+.container{
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px 50px;
+}
+form h1{
+  text-align: center;
+  text-transform: capitalize;
+}
+#add{
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  text-transform: capitalize;
+  margin: 5px 0;
+  cursor: pointer;
+}
+#add:hover{
+  background-color: rgba(0, 128, 0, 0.79);
+}
+table{
+  border-collapse: collapse;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+}
+thead th, tbody td{
+  padding: 15px;
+}
+thead th:first-child, tbody td:first-child{
+  padding: 0px;
+}
+
+#malumot_body button{
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: brown;
+  cursor: pointer;
+  padding: 8px 15px;
+  color: white;
+  text-transform: capitalize;
+}
+#malumot_body #edit{
+  background-color: blue;
+}
+/* -------- modal oyna css ----------- */
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.766);
+  top: -100%;
+  left: 0;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+}
+.modal form{
+  width: 40%;
+  background-color: var(--bg);
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  position: absolute;
+  top: -100%;
+  transition: 0.4s ease;
+}
+form input{
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+form button{
+  padding: 10px 0;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--bg);
+  text-transform: capitalize;
+  font-size: 18px;
+}
