@@ -70,6 +70,7 @@ modal.addEventListener("click", () => {
   closess();
 });
 
+// mahsulot qo'shish
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if(qiymat === null) {
@@ -101,7 +102,7 @@ form.addEventListener("submit", (e) => {
   }
   closess();
 })
-
+// kerakli malumotlarni input oynasiga kiritish
 input.forEach((val) => {
   val.addEventListener("change", (e) => {
     malumotlar = {
@@ -122,6 +123,8 @@ function editStorage(i) {
     val.value = dataStorage[i][val.name];
   });
 }
+
+// delete function
 function deleteStorage(i) {
   console.log(dataStorage.slice(i, i + 1));
   localStorage.setItem(
